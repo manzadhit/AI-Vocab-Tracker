@@ -11,9 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^6.18.0",
+    "bcrypt": "^6.0.0",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
-    "nodemon": "^3.1.10"
+    "http-status": "^2.1.0",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.10",
+    "winston": "^3.18.3"
   },
   "devDependencies": {
     "prisma": "^6.18.0"
