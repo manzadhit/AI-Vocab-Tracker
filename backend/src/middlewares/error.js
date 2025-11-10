@@ -33,7 +33,7 @@ const errorConverter = (err, req, res, next) => {
       error = handlePrismaError(err);
 
     } else {
-      const statusCode = err.statusCode || status.INTERNAL_SERVER_ERROR;
+      const statusCode = err.statusCode || err.status || status.INTERNAL_SERVER_ERROR;
       const message = err.message || status[statusCode];
       error = new ApiError(statusCode, message, false, err.stack);
     }
